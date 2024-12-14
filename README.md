@@ -20,16 +20,16 @@ To compile and run the program, use the following steps:
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/vianneydb/Students-Database
    cd <repository_directory>
    ```
 
-3. Compile in terminal:
+2. Compile in terminal:
    ```bash
    gcc -o students_database students_database.c functions.c
    ```
 
-4. Run the program:
+3. Run the program:
    ```bash
    ./students_database
    ```
