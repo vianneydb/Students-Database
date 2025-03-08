@@ -1,16 +1,13 @@
 CC=gcc
 CFLAGS=-I.
 
-all: main
+all: students_database
 
-main: main.o database.o
-	$(CC) -o main main.o database.o
+students_database: students_database.o
+	$(CC) -o students_database students_database.o
 
-main.o: main.c
-	$(CC) -c main.c $(CFLAGS)
-
-database.o: database.c
-	$(CC) -c database.c $(CFLAGS)
+students_database.o: students_database.c
+	$(CC) -c students_database.c $(CFLAGS)
 
 clean:
-	rm -f *.o main
+	rm -f *.o students_database
