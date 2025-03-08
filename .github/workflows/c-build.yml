@@ -14,7 +14,11 @@ jobs:
       run: sudo apt-get install -y gcc make
 
     - name: Compile
-      run: make
+      run: |
+        cd program
+        make
 
     - name: Run tests
-      run: ./test_suite
+      run: |
+        cd program
+        ./students_database
